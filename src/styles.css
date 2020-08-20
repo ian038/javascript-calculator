@@ -1,0 +1,91 @@
+/* Variables */
+:root {
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-light-black: #222222;
+    --color-black: #000000;
+    --shadow: rgba(0, 0, 0, .4);
+}
+
+.App {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.calculator {
+    height: 80vh;
+    width: 25%;
+    box-shadow: 0 2rem 4rem var(--shadow);
+    background-color: var(--color-light-black);
+}
+
+.result-screen {
+    height: 19vh;
+    width: 100%;
+    font-size: 6rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.computation-screen {
+    height: 6vh;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+.screen {
+    height: 25vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #FF4B2B;
+    color: var(--color-light-white);
+}
+
+.keypad-row {
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+
+.keypad {
+    height: 55vh;
+    width: 100%;
+}
+
+.btn {
+    width: 25%;
+    height: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.btn:hover {
+    color: var(--color-light-white);
+    background-color: #FF4B2B;
+}
+
+.btn:active {
+    transform: scale(.95);
+}
+
+.btn--large {
+    width: 50%;
+}
+
+.btn--large:hover {
+    color: var(--color-light-white);
+    background-color: #FF4B2B;
+}
